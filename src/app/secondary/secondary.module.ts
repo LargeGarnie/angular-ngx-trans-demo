@@ -6,11 +6,16 @@ import { LocalizeRouterModule } from '@gilsdav/ngx-translate-router'
 import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core'
 import { TranslateHttpLoader } from '@ngx-translate/http-loader'
 import { SecondaryComponent } from './secondary.component'
+import { WithIdComponent } from './with-id/with-id.component'
 
 const routes: Routes = [
   {
     path: '',
     component: SecondaryComponent
+  },
+  {
+    path: 'something/:id/with-id',
+    component: WithIdComponent
   }
 ]
 
@@ -19,7 +24,7 @@ export function HttpLoader(http: HttpClient){
 }
 
 @NgModule({
-  declarations: [SecondaryComponent],
+  declarations: [SecondaryComponent, WithIdComponent],
   imports: [
     CommonModule,
     TranslateModule.forChild({

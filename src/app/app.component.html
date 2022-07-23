@@ -4,6 +4,8 @@
   <br>
   <a [routerLink]='"secondary" | localize '>{{ 'main.secondaryLink' | translate }}</a>
   <br>
+  <a  [routerLink]='["secondary/something/234/with-id" | localize] '>{{'main.secondaryLinkWithId' | translate}}</a>
+  <br>
   <select [ngModel]="activeLang" (ngModelChange)="changeLang($event)">
     <option value='fr'>francais</option>
     <option value='en'>Englais</option>

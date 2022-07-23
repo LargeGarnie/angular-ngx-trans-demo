@@ -2,11 +2,14 @@
   "main":{
     "title": "Main is working",
     "mainLink": "Main page",
-    "secondaryLink": "Secondary Page"
+    "secondaryLink": "Secondary Page",
+    "secondaryLinkWithId": "Secondary Page with ID"
   },
   "secondary":{
     "title": "Secondary is working"
   },
   "ROUTES.main": "principal-en",
-  "ROUTES.secondary": "secondary"
+  "ROUTES.secondary": "secondary",
+  "ROUTES.something": "something",
+  "ROUTES.with-id": "with-ID"
 }
