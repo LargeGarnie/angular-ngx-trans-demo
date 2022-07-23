@@ -1,0 +1,12 @@
+{
+  "main":{
+    "title": "La principal fonctionne",
+    "mainLink": "Page principal",
+    "secondaryLink": "Page secondaire"
+  },
+  "secondary":{
+    "title": "La deuxième fonctionne"
+  },
+  "ROUTES.main": "principal",
+  "ROUTES.secondary": "secondaire"
+}

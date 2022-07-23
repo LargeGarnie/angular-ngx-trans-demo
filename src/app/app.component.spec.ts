@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ngxtrans'`, () => {
+  it(`should have as title 'transloco'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ngxtrans');
+    expect(app.title).toEqual('transloco');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('ngxtrans app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('transloco app is running!');
   });
 });
